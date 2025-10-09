@@ -1,3 +1,71 @@
+.blog-single,
+.container,
+.gray-bg {
+  background: transparent !important;
+}
+body {
+  background-image: url('https://c.tenor.com/eWT5VFgoxDYAAAAd/tenor.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* Номера <ol> как <h3> */
+ol li::marker {
+  color: #343a40; /* цвет как у h3 по умолчанию Bootstrap */
+  font-size: 1.75rem; /* размер как у h3 Bootstrap */
+  font-weight: bold;
+}
+/* Красный цвет для блока Famous Quote в сайдбаре */
+.widget-title h3:contains('Famous Quote') ~ .widget-body blockquote,
+.widget-title h3:contains('Famous Quote') ~ .widget-body blockquote p {
+  color: #d32f2f !important;
+}
+.widget.widget-tags .widget-title h3:contains('Famous Quote') + .widget-body blockquote,
+.widget.widget-tags .widget-title h3:contains('Famous Quote') + .widget-body blockquote p {
+  color: #d32f2f !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/* Принудительно делаем стрелки Bootstrap-карусели черными через фильтр */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(1) brightness(0) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/* Черные стрелки для Bootstrap-карусели */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+}
+.carousel-control-prev-icon::after {
+  transform: rotate(135deg);
+  margin-left: 10px;
+}
+.carousel-control-next-icon::after {
+  transform: rotate(-45deg);
+  margin-right: 10px;
+}
 body{margin-top:20px;}
 .blog-listing {
     padding-top: 30px;
@@ -63,7 +131,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #ffffffc0;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
@@ -176,7 +244,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #f8f2f2ce;
   padding: 15px;
   margin: 15px 0 30px;
 }
@@ -199,7 +267,7 @@ body{margin-top:20px;}
 }
 .article .article-title .media {
   padding-top: 15px;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddddddd8;
   padding-bottom: 20px;
 }
 .article .article-title .media .avatar {
@@ -224,7 +292,6 @@ body{margin-top:20px;}
 .article .article-content h2,
 .article .article-content h3,
 .article .article-content h4,
-.article .article-content h5,
 .article .article-content h6 {
   color: #20247b;
   font-weight: 600;
@@ -256,7 +323,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #ffffffd3;
   padding: 20px;
 }
 .article-comment h4 {
@@ -400,4 +467,39 @@ img {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: solid rgba(255, 255, 255, 0.719);
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+}
+.carousel-control-prev-icon::after {
+    transform: rotate(135deg);
+    margin-left: 10px;
+}
+.carousel-control-next-icon::after {
+    transform: rotate(-45deg);
+    margin-right: 10px;
+}
+h1 {
+  color: #20247b !important;
+font-weight: 600;
+  margin-bottom: 15px;
 }
