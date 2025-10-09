@@ -4,7 +4,7 @@
   background: transparent !important;
 }
 body {
-  background-image: url('https://media1.tenor.com/m/-nlWedJZZ5EAAAAC/i-am-the-mountain.gif');
+  background-image: url('https://c.tenor.com/eWT5VFgoxDYAAAAd/tenor.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -131,7 +131,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #ffffffc0;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
@@ -244,7 +244,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #f8f2f2ce;
   padding: 15px;
   margin: 15px 0 30px;
 }
@@ -267,7 +267,7 @@ body{margin-top:20px;}
 }
 .article .article-title .media {
   padding-top: 15px;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddddddd8;
   padding-bottom: 20px;
 }
 .article .article-title .media .avatar {
@@ -323,7 +323,7 @@ body{margin-top:20px;}
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
   overflow: hidden;
-  background: #ffffff;
+  background: #ffffffd3;
   padding: 20px;
 }
 .article-comment h4 {
@@ -486,7 +486,7 @@ img {
     display: block;
     width: 16px;
     height: 16px;
-    border: solid white;
+    border: solid rgba(255, 255, 255, 0.719);
     border-width: 0 4px 4px 0;
     padding: 3px;
 }
@@ -503,3 +503,4 @@ h1 {
 font-weight: 600;
   margin-bottom: 15px;
 }
+
